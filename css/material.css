@@ -1,0 +1,66 @@
+:root {
+    /* --theme1-c1: #080808;
+    --theme1-c2: #888888;
+    --theme1-c3: #aaaaaa;
+    --theme1-c4: #efefef; */
+
+    --theme1-c1: #3e206d;
+    --theme1-c2: #fb74bb;
+    --theme1-c3: #d1d7f4;
+    --theme1-c4: #ffffff;
+}
+
+body {
+    background-color: var(--theme1-c4);
+}
+
+.card {
+    box-shadow: 1px 1px 10px var(--theme1-c3);
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    background-color: var(--theme1-c4);
+    color: var(--theme1-c1);
+    font-weight: 400;
+}
+
+.btnPrimary {
+    background-color: var(--theme1-c1);
+    color: var(--theme1-c4);
+}
+
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: var(--theme1-c4) radial-gradient(circle, transparent 1%, var(--theme1-c4) 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: var(--theme1-c3);
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.ripplePrimary {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripplePrimary:hover {
+    background: var(--theme1-c1) radial-gradient(circle, transparent 1%, var(--theme1-c1) 1%) center/15000%;
+}
+
+.ripplePrimary:active {
+    background-color: var(--theme1-c2);
+    color: var(--theme1-c4);
+    background-size: 100%;
+    transition: background 0s;
+}
