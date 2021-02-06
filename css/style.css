@@ -39,20 +39,31 @@ section {
     place-items: center;
 }
 
+.border {
+    border: 1px solid var(--theme1-c3);
+}
+
 /* -------------------------------------------- */
 
 .container {
     position: absolute;
-    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 99vw;
-    height: 49vw;
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(11, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container1 {
+    top: 0;
+}
+
+#container2 {
+    top: 100vh;
+    background-color: var(--theme1-c4);
+}
+
+#container3 {
+    top: 200vh;
 }
 
 .centerDiv {
@@ -61,40 +72,111 @@ section {
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    
-}
-
-.container2 {
-    position: absolute;
-    top: 50vw;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 99vw;
-    height: 49vw;
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(11, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
-    height: 10vh;
-    background-color: var(--theme1-c4);
+    height: 8vh;
+    background-color: var(--genericWhite);
     color: var(--theme1-c1);
     z-index: 2;
 }
 
+.headerContent {
+    width: 75%;
+}
+
+.headerBrand {
+    position: relative;
+    float: left;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.brandLogo {
+    position: relative;
+    float: left;
+    content: url("../images/logo/compass2.png");
+    height: 35px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.headerLogIn {
+    position: relative;
+    float: right;
+    color: var(--theme1-c1);
+    height: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.topBanner {
+    position: absolute;
+    top: 8vh;
+    width: 100vw;
+    height: 6vh;
+    background-color: var(--theme1-c1);
+    color: var(--theme1-c4);
+    z-index: 1;
+}
+
+.bannerMenuItem {
+    position: relative;
+    float: right;
+    margin-left: 4vw;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 .footer {
     position: absolute;
-    top: 100vw;
-    height: 50vh;
+    top: 300vh;
+    height: 92vh;
     width: 100%;
     background-color: var(--theme1-c4);
     color: var(--theme1-c1);
+}
+
+.footerContainer {
+    width: 75%;
+    height: 60%;
+}
+
+.footerColumn {
+    position: relative;
+    float: right;
+    width: 17%;
+    height: 100%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.footerRowHead {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.footerRow {
+    width: 100%;
+    border-bottom: 1px solid var(--genericWhite);
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.footerRow:hover {
+    color: var(--theme1-c2);
 }
 
 /* mobile portrait */

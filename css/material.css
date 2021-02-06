@@ -1,4 +1,7 @@
 :root {
+    --genericWhite: #fefefe;
+    --genericBlack: #222222;
+
     /* --theme1-c1: #080808;
     --theme1-c2: #888888;
     --theme1-c3: #aaaaaa;
@@ -7,15 +10,20 @@
     --theme1-c1: #3e206d;
     --theme1-c2: #fb74bb;
     --theme1-c3: #d1d7f4;
-    --theme1-c4: #ffffff;
+    --theme1-c4: #efefef;
 }
 
 body {
-    background-color: var(--theme1-c4);
+    background-color: var(--genericWhite);
 }
 
 .card {
     box-shadow: 1px 1px 10px var(--theme1-c3);
+}
+
+.glass {
+    backdrop-filter: blur(20px);
+    opacity: .7;
 }
 
 .btn {
