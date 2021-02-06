@@ -45,41 +45,12 @@ section {
 
 /* -------------------------------------------- */
 
-.container {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    height: 100vh;
-}
-
-#container1 {
-    top: 0;
-}
-
-#container2 {
-    top: 100vh;
-    background-color: var(--theme1-c4);
-}
-
-#container3 {
-    top: 200vh;
-}
-
-.centerDiv {
-    grid-area: 4 / 5 / 8 / 8;
-    background-image: url("../images/gif/compass_S.gif");
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .header {
     position: fixed;
     top: 0;
     width: 100%;
     height: 8vh;
-    background-color: var(--genericWhite);
+    /* background-color: var(--genericWhite); */
     color: var(--theme1-c1);
     z-index: 2;
 }
@@ -134,6 +105,70 @@ section {
     font-size: 16px;
 }
 
+.container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vh;
+}
+.sectionContent{
+    position: absolute;
+    height: 70%;
+    bottom: 5%;
+    left: 10%;
+    width: 80%;
+}
+#container1 {
+    top: 0;
+}
+
+#container2 {
+    top: 100vh;    
+}
+
+#container3 {
+    top: 200vh;
+}
+#gif1{
+    position: relative;
+    float: left;
+    content: url("../images/gif/tea_S_1k.gif");
+    width: 40%;
+}
+#sampleContent1{
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+}
+#gif2{
+    position: relative;
+    float: right;
+    content: url("../images/gif/compass_S.gif");
+    width: 40%;
+}
+#sampleContent2{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+}
+#gif3{
+    position: relative;
+    float: left;
+    content: url("../images/gif/screen_S_1k.gif");
+    width: 40%;
+}
+#sampleContent3{
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+}
 .footer {
     position: absolute;
     top: 300vh;
@@ -145,7 +180,7 @@ section {
 
 .footerContainer {
     width: 75%;
-    height: 60%;
+    height: 70%;
 }
 
 .footerColumn {
@@ -177,6 +212,14 @@ section {
 
 .footerRow:hover {
     color: var(--theme1-c2);
+}
+
+.footerCopyright {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
 }
 
 /* mobile portrait */

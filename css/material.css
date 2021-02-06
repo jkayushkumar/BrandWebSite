@@ -23,7 +23,6 @@ body {
 
 .glass {
     backdrop-filter: blur(20px);
-    opacity: .7;
 }
 
 .btn {
