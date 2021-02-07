@@ -30,3 +30,43 @@ function toggleHeaderMenu() {
 
     }
 }
+function toggleNavMenu(num) {
+
+    switch (num) {
+        case 1:
+            document.getElementById("c1").classList.toggle("noDisplay");
+            document.getElementById("c2").classList.add("noDisplay");
+            document.getElementById("c3").classList.add("noDisplay");
+            document.getElementById("c4").classList.add("noDisplay");
+            break;
+        case 2:
+            document.getElementById("c2").classList.toggle("noDisplay");
+            document.getElementById("c1").classList.add("noDisplay");
+            document.getElementById("c3").classList.add("noDisplay");
+            document.getElementById("c4").classList.add("noDisplay");
+            break;
+        case 3:
+            document.getElementById("c3").classList.toggle("noDisplay");
+            document.getElementById("c1").classList.add("noDisplay");
+            document.getElementById("c2").classList.add("noDisplay");
+            document.getElementById("c4").classList.add("noDisplay");
+            break;
+        case 4:
+            document.getElementById("c4").classList.toggle("noDisplay");
+            document.getElementById("c2").classList.add("noDisplay");
+            document.getElementById("c3").classList.add("noDisplay");
+            document.getElementById("c1").classList.add("noDisplay");
+            break;
+    }
+}
+// window.onclick = function (event) {
+//     if (!((event.target == document.getElementById("c1")) ||
+//         (event.target == document.getElementById("c2")) ||
+//         (event.target == document.getElementById("c3")) ||
+//         (event.target == document.getElementById("c4")))) {
+//         document.getElementById("c1").classList.add("noDisplay");
+//         document.getElementById("c2").classList.add("noDisplay");
+//         document.getElementById("c3").classList.add("noDisplay");
+//         document.getElementById("c4").classList.add("noDisplay");
+//     }
+// }
