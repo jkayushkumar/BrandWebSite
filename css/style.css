@@ -92,7 +92,7 @@ section {
     top: 0;
     left: -100vw;
     z-index: 1;
-    width: 80vw;
+    width: 95%;
     background-color: var(--theme1-c1);
     color: var(--genericWhite);
     transition: 1s;

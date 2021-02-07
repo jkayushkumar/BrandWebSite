@@ -25,7 +25,7 @@ function toggleHeaderMenu() {
         $("#mobileHeaderMenu2").animate({ left: "-100vw" });
         setTimeout(function () {
             document.getElementById("mobileHeaderMenu").classList.add("noDisplay");
-            document.getElementById("mobileHeaderMenu2").classList.add("noDisplay");;
+            document.getElementById("mobileHeaderMenu2").classList.add("noDisplay");
         }, 1000);
 
     }
