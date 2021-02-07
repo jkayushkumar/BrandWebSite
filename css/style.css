@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', 'Source Sans Pro', 'Work Sans', Tahoma, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
 }
 
@@ -23,7 +23,7 @@ section {
 /* Utility Classes ----------------------------*/
 
 .noDisplay {
-    display: none;
+    display: none!important;
 }
 
 .textCenter {
@@ -53,6 +53,7 @@ section {
     /* background-color: var(--genericWhite); */
     color: var(--theme1-c1);
     z-index: 2;
+    box-sizing: border-box;
 }
 
 .headerContent {
@@ -81,10 +82,54 @@ section {
     float: right;
     color: var(--theme1-c1);
     height: 100%;
-    font-size: 16px;
     cursor: pointer;
     font-weight: 400;
     padding-top: 10px;
+}
+
+.headerMenu {
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    z-index: 1;
+    width: 80vw;
+    background-color: var(--theme1-c1);
+    color: var(--genericWhite);
+    transition: 1s;
+}
+
+#mobileHeaderMenu2 {
+    height: calc(400vh - 8vh);
+}
+
+.headerMenuHead {
+    position: relative;
+    width: 100%;
+    height: 8vh;
+    color: var(--genericWhite);
+    font-size: 22px;
+}
+
+.headerMenuRow {
+    position: relative;
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    color: var(--genericWhite);
+}
+
+.rowHead {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    border-bottom: 1px solid var(--genericWhite);
+    box-sizing: border-box;
+}
+
+.headerMenuRowItem {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
 }
 
 .topBanner {
@@ -102,7 +147,6 @@ section {
     float: right;
     margin-left: 4vw;
     cursor: pointer;
-    font-size: 16px;
 }
 
 .container {
@@ -112,63 +156,72 @@ section {
     width: 100vw;
     height: 100vh;
 }
-.sectionContent{
+
+.sectionContent {
     position: absolute;
     height: 70%;
     bottom: 5%;
     left: 10%;
     width: 80%;
 }
+
 #container1 {
     top: 0;
 }
 
 #container2 {
-    top: 100vh;    
+    top: 100vh;
 }
 
 #container3 {
     top: 200vh;
 }
-#gif1{
+
+#gif1 {
     position: relative;
     float: left;
     content: url("../images/gif/tea_S_1k.gif");
     width: 40%;
 }
-#sampleContent1{
+
+#sampleContent1 {
     position: relative;
     float: right;
     width: 50%;
     height: 100%;
     font-size: 20px;
 }
-#gif2{
+
+#gif2 {
     position: relative;
     float: right;
     content: url("../images/gif/compass_S.gif");
     width: 40%;
 }
-#sampleContent2{
+
+#sampleContent2 {
     position: relative;
     float: left;
     width: 50%;
     height: 100%;
     font-size: 20px;
 }
-#gif3{
+
+#gif3 {
     position: relative;
     float: left;
     content: url("../images/gif/screen_S_1k.gif");
     width: 40%;
 }
-#sampleContent3{
+
+#sampleContent3 {
     position: relative;
     float: right;
     width: 50%;
     height: 100%;
     font-size: 20px;
 }
+
 .footer {
     position: absolute;
     top: 300vh;
@@ -194,7 +247,6 @@ section {
 
 .footerRowHead {
     width: 100%;
-    font-size: 16px;
     font-weight: 400;
     padding: 20px;
     padding-left: 10px;
@@ -204,7 +256,6 @@ section {
 .footerRow {
     width: 100%;
     border-bottom: 1px solid var(--genericWhite);
-    font-size: 16px;
     padding: 10px;
     box-sizing: border-box;
     cursor: pointer;
@@ -224,7 +275,27 @@ section {
 
 /* mobile portrait */
 
-@media only screen and (max-width: 567px) {}
+@media only screen and (max-width: 567px) {
+    .headerContent {
+        display: contents;
+    }
+    .headerBrand {
+        display: none;
+    }
+    .headerLogIn {
+        display: none;
+    }
+    .bannerMenuItem {
+        display: none;
+    }
+    .topBanner {
+        display: contents;
+        content: "Inclunav";
+    }
+    .hamBurger {
+        display: grid!important;
+    }
+}
 
 /* mobile landscape, tab */
 

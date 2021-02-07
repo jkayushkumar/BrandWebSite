@@ -2,15 +2,15 @@
     --genericWhite: #fefefe;
     --genericBlack: #222222;
 
-    /* --theme1-c1: #080808;
+    --theme1-c1: #080808;
     --theme1-c2: #888888;
     --theme1-c3: #aaaaaa;
-    --theme1-c4: #efefef; */
+    --theme1-c4: #efefef;
 
-    --theme1-c1: #3e206d;
+    /* --theme1-c1: #3e206d;
     --theme1-c2: #fb74bb;
     --theme1-c3: #d1d7f4;
-    --theme1-c4: #efefef;
+    --theme1-c4: #efefef; */
 }
 
 body {
@@ -70,4 +70,27 @@ body {
     color: var(--theme1-c4);
     background-size: 100%;
     transition: background 0s;
+}
+
+.hamBurger {
+    position: absolute;
+    left: 1vh;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    height: 6vh;
+    width: 6vh;
+    padding: 2%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hamBurgerDiv {
+    width: 90%;
+    height: .2vh;
+    background-color: var(--theme1-c1);
+}
+
+.hamActive {
+    background-color: var(--genericWhite);
 }
