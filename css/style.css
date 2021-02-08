@@ -71,7 +71,7 @@ section {
 .brandLogo {
     position: relative;
     float: left;
-    content: url("../images/logo/compass2.png");
+    content: url("../images/logo/inclunav.png");
     height: 35px;
     margin-right: 10px;
     cursor: pointer;
@@ -340,6 +340,56 @@ section {
         height: 90%;
         bottom: 2%;
         font-size: 16px;
+    }
+    .footer {
+        height: max-content;
+    }
+    .footerContainer {
+        height: max-content;
+    }
+    .footerColumn {
+        width: 100%;
+        text-align: center;
+        height: max-content;
+    }
+    .footerCopyright {
+        padding-top: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+    #gif1 {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+    }
+    #sampleContent1 {
+        float: left;        
+        width: 80%;
+        margin-left: 10%;
+        height: 50%;
+    }
+    #gif2 {
+        float: left;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+    }
+    #sampleContent2 {
+        float: left;        
+        width: 80%;
+        margin-left: 10%;
+        height: 50%;
+    }
+    #gif3 {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+    }
+    #sampleContent3 {
+        float: left;        
+        width: 80%;
+        margin-left: 10%;
+        height: 50%;
     }
 }
 

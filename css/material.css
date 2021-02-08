@@ -2,15 +2,20 @@
     --genericWhite: #fefefe;
     --genericBlack: #222222;
 
-    --theme1-c1: #080808;
+    /* --theme1-c1: #080808;
     --theme1-c2: #888888;
     --theme1-c3: #aaaaaa;
-    --theme1-c4: #efefef;
+    --theme1-c4: #efefef; */
 
     /* --theme1-c1: #3e206d;
     --theme1-c2: #fb74bb;
     --theme1-c3: #d1d7f4;
     --theme1-c4: #efefef; */
+
+    --theme1-c1: #2e3192;
+    --theme1-c2: #662d91;
+    --theme1-c3: #00aeef;
+    --theme1-c4: #efefef;
 }
 
 body {
