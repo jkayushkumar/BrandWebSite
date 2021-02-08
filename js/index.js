@@ -59,14 +59,18 @@ function toggleNavMenu(num) {
             break;
     }
 }
-// window.onclick = function (event) {
-//     if (!((event.target == document.getElementById("c1")) ||
-//         (event.target == document.getElementById("c2")) ||
-//         (event.target == document.getElementById("c3")) ||
-//         (event.target == document.getElementById("c4")))) {
-//         document.getElementById("c1").classList.add("noDisplay");
-//         document.getElementById("c2").classList.add("noDisplay");
-//         document.getElementById("c3").classList.add("noDisplay");
-//         document.getElementById("c4").classList.add("noDisplay");
-//     }
-// }
+window.onclick = function (event) {
+
+
+    if (!((event.target == document.getElementById("b4"))
+        || (event.target == document.getElementById("b3"))
+        || (event.target == document.getElementById("b2"))
+        || (event.target == document.getElementById("b1")))) {
+        document.getElementById("c1").classList.add("noDisplay");
+        document.getElementById("c2").classList.add("noDisplay");
+        document.getElementById("c3").classList.add("noDisplay");
+        document.getElementById("c4").classList.add("noDisplay");
+    }
+
+
+}

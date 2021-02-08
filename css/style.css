@@ -145,7 +145,7 @@ section {
 .navMenuHolder {
     position: absolute;
     top: 14vh;
-    right: 10%;
+    right: 7%;
     z-index: 1;
 }
 
@@ -183,7 +183,7 @@ section {
     position: relative;
     float: right;
     width: 12vw;
-    text-align: center;
+    text-align: right;
     cursor: pointer;
 }
 
